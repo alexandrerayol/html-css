@@ -20,6 +20,12 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 48px;
+
+    /*propriedades para deixar o header fixo
+      mesmo com os scrolls vertical e horizontal*/
+    position: fixed;
+    width: 100%;
+    background-color: #1E1E1E;
 }
 button {
     background-color: transparent;
@@ -37,10 +43,21 @@ button {
     font-size: 16px;
     font-style: normal;
 }
+    /*de 0 até 600px execute este estilo sobre esse elemento*/
+@media(max-width:600px){
+    button > div{
+        display: none;
+    }
+    button {
+
+        border: 2.5px solid #8B5CF6;
+    }
+}
 
 form {
     display: flex;
-    padding: 0px 48px;
+    padding: 185px 48px 48px 48px;
+    width: fit-content; /*encaixa o conteúdo*/
 }
 
 .days {
@@ -106,3 +123,4 @@ input:checked {
     justify-content: center; /*Alinha horizontalmente os elementos*/
 
 }
+
