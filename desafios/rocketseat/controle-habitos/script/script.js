@@ -30,10 +30,10 @@ function saveData() {
 }
 
 const dataString = window.localStorage.getItem('rocketseat@habits') || {}
-
-//Pega os dados armazenados localmente no navegador, caso exista. 
-//Caso não existe, é passado um objeto vazio para evitar erros. 
-
-const dataObject = JSON.parse(dataString) // Converte de string para objeto
-nlwSetup.setData(dataObject) // Atualiza os dados de acordo com o localStorage
+/*
+    Pega os dados armazenados localmente no navegador, caso exista. 
+    Caso não existe, é passado um objeto vazio para evitar erros. 
+*/
+const dataObject = JSON.parse(dataString) //Converte de string para objeto
+nlwSetup.setData(dataObject) //Atualiza os dados de acordo com o localStorage
 nlwSetup.load()
