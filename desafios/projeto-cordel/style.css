@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&family=Yatra+One&display=swap');
+
+:root{
+    --font-paragerafo: 'Satisfy', cursive;
+    --font-header: 'Yatra One', cursive;
+}
 *{
     margin: 0;
     padding: 0; 
@@ -28,11 +36,17 @@ header > h1 {
     
     text-align: center;
     font-variant: small-caps;
+
+    font-family: var(--font-header);
+    font-size: 3em;
 }
 header > p {
 
     text-align: center;
     padding: 10px;
+
+    font-family: var(--font-paragerafo);
+    font-size: 1.4em;
 }
 
 
@@ -40,27 +54,65 @@ header > p {
 section {
     padding-top: 10vh;
     padding-bottom: 10vh;
-    line-height: 2.1em;
+}
+
+section p {
+    font-family: var(--font-paragerafo);
+    font-size: 1.5em;
+    line-height: 2em;
 }
 .normal { 
 
     background-color: white;
     color: black;
+    padding-left: 45px;
+
 }
-.imagem {
-    background-color:rgb(85, 85, 85);
+.normal > p {
+    margin-bottom: 25px;
+}
+
+
+.imagem#primeira-imagem {
     color: white;
+    padding-left: 30px;
+    box-shadow: inset 1px 1px 10px 5px #00000080;
+    
+    background-image: url('imagens/background001.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-attachment: fixed;
+    
+}
+.imagem#segunda-imagem {
+    color: white;
+    padding-left: 30px;
+    box-shadow: inset 1px 1px 10px 5px #00000060;
+    
+    background-image: url('imagens/background002.jpg');
+    background-size: cover;
+    background-position: right center;
+    background-attachment: fixed;
 
 }
-
-.imagem > p {
-    background-color: rgba(0, 0, 0, 0.200);
+.imagem#primeira-imagem > p {
+    background-color: #00000067;
     width: 350px;
+    padding: 15px;
+    border-radius: 10px;
+    
 }
-
+.imagem#segunda-imagem > p {
+    background-color: #000000be;
+    width: 350px;
+    padding: 15px;
+    border-radius: 10px;
+    
+}
 
 footer{
-    background-color: #000000d0;
+    background-color: #0000009f;
     color: white;
 
     text-decoration: none;
@@ -71,6 +123,6 @@ footer{
 
 footer a {
     text-decoration: none;
-    color: white;
+    color: rgba(255, 255, 255, 0.842);
     text-align: center;
 }
