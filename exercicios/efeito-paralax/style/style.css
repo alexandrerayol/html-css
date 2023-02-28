@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+*{
+    padding: 0;
+    margin: 0;
+
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+body{
+    background-color: rgb(231, 231, 231);
+}
+
+header{
+    background-color: #d97441;
+    height: 140px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+header h1{
+    color: white;
+    font-size: 2.5em;
+}
+
+section.normal{
+    background-color: darkgrey;
+    max-width: 800px;
+    margin: auto;
+    padding: 10vh;
+
+    text-align: justify;
+    line-height: 2em;
+
+    border-radius: 10px;
+}
+section.img{
+    background-color: black;
+    min-height: 400px;
+    margin: 50px 0px 50px 0px;
+}
+section.img#img1{
+    background-image: url(../imagem/imagem-azul.jpeg);
+    background-position: center center;
+    background-size: cover;
+
+    background-attachment: fixed;
+}
+section.img#img2{
+    background-image: url(../imagem/imagem-rosa.jpg);
+    background-position: center center;
+    background-size: cover;
+
+    background-attachment: fixed;
+}
+
+
+
+footer{
+    margin-top: 20px;
+    background-color: #d97441;
+    height: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    color: rgb(226, 226, 226);
+}
